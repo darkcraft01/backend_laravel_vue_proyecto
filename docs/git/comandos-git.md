@@ -1,5 +1,5 @@
-#COMANDOS DE GIT (INICIALES)
-##REQUERIMIENTOS
+## COMANDOS DE GIT (INICIALES)
+## REQUERIMIENTOS
 - Descargar GIT
 - Crear Cuenta GITHUB
 ##Configurar GIT
@@ -21,3 +21,9 @@ git config --global user.email "Su correo"
 ## Actualizar el Repositorio
 
 - git add .
+- git commit -m "Proyecto Base (Crud de Usuarios)"
+- git push origin master
+
+## Obtener los nuevos cambios
+
+- git pull origin master
