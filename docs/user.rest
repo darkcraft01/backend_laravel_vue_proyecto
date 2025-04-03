@@ -1,3 +1,33 @@
 GET http://127.0.0.1:8000/api/user
 Accept: application/json
+Authorization: Bearer 7|oU69bV19jYhmq4M93VMVYLOUAwZwYcpFPFz7mcPS3212a5e7
+
+### Guardar
+
+POST http://127.0.0.1:8000/api/user
+Accept: application/json
+Content-Type: application/json
 Authorization: Bearer 2|nH9elsq21dN4D3YsvBEK8wSHKeomNNKwdgF3Jd59089fc160
+
+{
+    "name": "Jose",
+    "email": "jose@gmail.com",
+    "password": "jose12345"
+}
+
+### Mostrar
+
+GET http://127.0.0.1:8000/api/user/2
+Accept: application/json
+
+### Actualizar
+
+PUT http://127.0.0.1:8000/api/user/2
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Joses",
+    "email": "joses@gmail.com",
+    "password": "joses123456"
+}

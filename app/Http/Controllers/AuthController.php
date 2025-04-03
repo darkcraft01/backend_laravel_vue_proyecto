@@ -15,13 +15,12 @@ class AuthController extends Controller
         ]);
         // verificar si el correo y contraseña son correctos
         if(!Auth::attempt($credenciales)){
-            return response()->json([
-                "mensaje" => "Credenciales incorrectas"], 401);
+            return response()->json(["mensaje" => "Credenciales incorrectas"], 401);
         }
         // generar token
         $token = $request->user()->createToken("Token Auth")->plainTextToken;
 
-        // devolver token
+        // responder
         return response()->json(["access_token" => $token, "user" => $request->user()], 201);
 
     }

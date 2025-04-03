@@ -2,7 +2,19 @@
 POST http://127.0.0.1:8000/api/v1/auth/login
 Accept: application/json
 Content-Type: application/json
+
 {
     "email": "oliver@gmail.com",
     "password": "oliver123456"
 }
+
+##### PERFIL
+GET http://127.0.0.1:8000/api/v1/auth/profile
+Accept: application/json
+Authorization: Bearer 6|qQKWohoucr5Ry7zKwUK798hQ8Pvprw58gvqP0rqK156afa8e
+
+#### SALIR
+
+POST  http://127.0.0.1:8000/api/v1/auth/logout
+Accept: application/json
+Authorization: Bearer 6|qQKWohoucr5Ry7zKwUK798hQ8Pvprw58gvqP0rqK156afa8e
